@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "cursive", sans-serif;
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+.heading
+{
+    text-align: center;
+    color: aliceblue;
+
+}
+#main-section
+{
+
+    background-color: #f1f1f1;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 30%;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+.fields
+{
+    margin-top: 10px;
+}
+.fields input
+{
+    margin-top: 5px;
+}
+input[type=text], input[type=email]
+{
+    height: 30px;
+    width:100%;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+textarea
+{
+    width:100%;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus
+{
+    /*border-color: aquamarine;*/
+    /*background-color: darkgray;*/
+    /*outline: none;*/
+    border: 1px;
+    border-radius: 5px;
+}
+select
+{
+    width: 100%;
+    height: 30px;
+}
+input[type=submit],input[type=reset]
+{
+    height:30px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .col-md-6,.col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+    }
+    .name3{
+        margin-right: 65px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px)
+{
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+    .content-name{
+        margin-right: 30px;
+    }
+}

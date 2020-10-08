@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<h1 class="heading">Registration Form </h1>
+<form action="index.php" method="post" class="rform">
+    <div>
+        <div id="main-section">
+            <div class="fields">
+                <label>First Name:</label><br>
+                <input type="text" name="fname"><br>
+            </div>
+            <div class="fields">
+                <label>Last Name:</label><br>
+                <input type="text" name="lname"><br>
+            </div>
+            <div class="fields">
+                <label>Contact Number:</label><br>
+                <input type="text" name="contact"><br>
+            </div>
+            <div class="fields">
+                <label>E-mail:</label><br>
+                <input type="email" name="email"><br>
+            </div>
+            <div class="fields">
+                <label>Address: </label><br>
+                <textarea rows="5" cols="20"></textarea><br>
+            </div>
+            <div class="fields">
+                <label>Gender: </label><br>
+                <input type="radio" name="gender">Male<br>
+                <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender">Others<br>
+            </div>
+            <div class="fields">
+                <label>Hobbies:</label><br>
+                <input type="checkbox" name="reading">Reading&nbsp;<i class='fas fa-book-open'></i><br>
+                <input type="checkbox" name="painting">Painting&nbsp;<i class="fas fa-paint-brush"></i><br>
+                <input type="checkbox" name="aleeping">Sleeping  <img src="favicon-16x16.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><br>
+                <input type="checkbox" name="travelling">Travelling&nbsp;<i class='fas fa-plane-departure'></i><br>
+            </div>
+            <div class="fields">
+                <label>Skills:</label><br>
+                <select name="skills">
+                    <option value="Select" selected>Select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="JS">JS</option>
+                    <option value="JQUERY">JQUERY</option>
+                </select>
+            </div>
+            <div class="fields">
+                <input type="submit" value="Submit"><br>
+
+                <input type="reset" value="Reset">
+            </div>
+        </div>
+
+    </div>
+</form>
+</body>
+</html>
